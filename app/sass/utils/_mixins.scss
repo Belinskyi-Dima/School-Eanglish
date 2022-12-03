@@ -1,0 +1,10 @@
+@mixin titleMixin ($fw: 700, $fz: 20px, $lh: 1.4) {
+	font-weight: $fw;
+	font-size:  $fz;
+	line-height: $lh;
+}
+@mixin flexMixin($df:flex, $jc: space-between, $ai: center) {
+	display: $df;
+	justify-content: $jc;
+	align-items: $ai;
+}

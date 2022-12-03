@@ -1,0 +1,63 @@
+.teacher {
+	padding-top: 270px;
+	padding-bottom: 25px;
+	&__title {
+		@include titleMixin($fw:800);
+		letter-spacing: 0.03em;
+		margin-bottom: 20px;
+	}
+	&__img-wrapper {
+		width: 243px;
+		margin-bottom: 20px;
+	}
+	&__img {
+		max-width: 100%;
+		display: block;
+	}
+	&__name {
+		@include titleMixin($fw:800, $lh:1.2);
+		margin-bottom: 10px;
+
+	}
+	&__list {
+		border-top: 1px solid var(--primery-text-color);
+		padding-top: 20px;
+		margin-bottom: 43px;
+	}
+	&__item {
+		display: flex;
+		margin-bottom: 20px;
+	}
+	&__icon {
+		// display: block;
+		margin-right: 9px;
+		// width: 24px;
+
+	}
+	&__item-text {
+		@include titleMixin($fw: 600, $fz: 14,);
+		letter-spacing: 0.06em;
+	}
+	&__line {
+		position: relative;
+	}
+	&__line::before {
+		@extend %line; 
+		top: -20px;
+		height: 2px;
+		width: 20px;
+	}
+	&__education {
+		@include titleMixin($fw:500, $fz:12px , $lh: 1.66);
+		color: var(--primery-text-color);
+		margin-bottom: 20px;
+	}
+	&__education-link {
+		@include titleMixin($fw:500, $fz:12px , $lh: 1.66);
+		color: #FF6B09;
+		letter-spacing: 0.03em;
+		text-decoration-line: underline;
+
+	}
+
+}

@@ -1,0 +1,146 @@
+// @import '../utils/style';
+// .page-header {
+// 	// margin-bottom: ;
+// }
+.mobile-menu__wrapper.open body{
+	overflow: hidden;
+} 
+.page-header {
+	position: relative;
+}
+.menu-wrapper {
+	display: flex;
+	justify-content: space-between;
+	// justify-content: space-around;
+	align-items: center;
+	// padding-top: 35px;
+	padding:  30px 0;
+	margin-bottom: 50px;
+}
+.menu {
+	&__desktop {
+		display: flex;
+	}
+	&__list {
+		display: flex;
+	}
+}
+.logo {
+	z-index: 1;
+	display: inline-block;
+	width: 80px;
+	height: 23px;
+	// fill: white;
+
+}
+.menu {
+	display: none;
+	// &__desktop {
+	// // display: none;
+	// }
+	&__link {
+		display: block;
+		@include titleMixin($fz:14px, $lh: 1.2);
+		color: var(--primery-text-color);
+		padding: 60px 0;
+	}
+	&__link:hover,
+	&__link:focus {
+		color: var(--accent-color);
+	}
+	&__item:not(:last-child ) {
+		margin-right: 30px;
+	}
+
+	
+	&__btn {
+		display: none;
+		z-index: 1;
+		padding: 0;
+		background-color: transparent;
+		border: transparent;
+		// width: 30px;
+		// height: 30px;
+	}
+
+
+}
+.btn-wrapper {
+	display: flex;
+	align-items: center;
+}
+// .btn-wrapper .btn-consultation {
+	
+// }
+
+.mobile-icon {
+	display: block;
+}
+
+button.btn-consultation {
+	// display: none;
+	color: var(--accent-color);
+	margin-right: 40px;
+	// background: var(--white-color);
+	width: 260px;
+}
+.btn-consultation--mobile {
+	background: transparent;
+	color: var(--accent-color);
+
+}
+// .mobile-menu__wrapper {
+// 	// display: none;
+// }
+.is-headen {
+	display: none;
+}
+.mobile-menu {
+	&__wrapper {
+		display: none;
+		background: rgba(17, 21, 24, 0.9);
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		height: 100vh;
+	}
+	&__wrapper.open {
+		display: block;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+	}
+	&__link {
+		@include titleMixin($fw:800,  $lh: 1.7);
+		color: var(--white-color);
+		letter-spacing: 0.03em;
+	}
+	&__link:hover,
+	&____link:focus {
+		color: var(--accent-color);
+	}
+	&__item:not(:last-child) {
+		margin-bottom: 20px;
+	}
+	&__item:last-child {
+		margin-bottom: 50px;
+	}
+}
+// .mobile-menu__wrapper.open {
+// 	display: block;
+// 	display: flex;
+// 	flex-direction: column;
+// 	align-items: center;
+// 	justify-content: center;
+// }
+.btn-consultation {
+	background: transparent;
+}
+body.modal-open {
+	overflow: hidden;
+}
+body.modal-open .logo {
+	fill: white;
+}

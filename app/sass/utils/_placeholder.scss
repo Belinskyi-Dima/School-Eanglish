@@ -1,0 +1,16 @@
+// %line::before {
+// 	content: "";
+// 	position: absolute;
+// 	width: 10px;
+// 	height: 1px;
+// 	top: 8px;
+// 	left: 0;
+// 	background: var(--accent-color);
+// }
+%line {
+	content: "";
+	position: absolute;
+	width: 10px;
+	height: 1px;
+	background: var(--accent-color);
+}

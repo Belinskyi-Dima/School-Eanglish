@@ -1,0 +1,64 @@
+.our-decide {
+	position: relative;
+	background: var(--title-text-color);
+	padding: 60px 0 200px ;
+	
+	&__wrapper {
+		position: relative;
+		padding-right: 20%;
+		margin-bottom: 30px;
+	}
+	&__title {
+		@include titleMixin($fw: 800, $lh:1.35);
+		letter-spacing: 0.03em;
+		color: var(--white-color);
+	}
+	&__box {
+		position: relative;
+	
+	
+	}
+	&__list {
+		// z-index: 1;
+		position: absolute;
+		box-shadow: -5px 8px 26px rgba(0, 0, 0, 0.04);
+		// max-width: 100%;
+		width: 100%;
+		// width: 95%;
+		// margin: 0 20px;
+		// left: 50%;
+		// transform: translateX(-50%);
+		// top: -50%;
+		// transform: translate(-50%, -50%);
+		background: var(--white-color);
+		padding: 20px 25px;
+		// bottom: -50%;
+		// top: 400%;
+
+		// top: 40%;
+	}
+	&__item {
+		margin-bottom: 10px;
+		
+	}
+	&__number {
+		position: relative;
+		margin-left: 20px;
+		@include titleMixin($fz: 14px, $lh:1.2);
+		color: var(--accent-color);
+		
+	}
+	&__number::before {
+		@extend %line;
+		left: -20px;
+		top: 50%;
+		transform: translateY(-50%);
+	}
+	&__text {
+	
+		@include titleMixin($fz: 14px, $lh:1.42);
+		color: var(--title-text-color);
+
+	}
+
+}

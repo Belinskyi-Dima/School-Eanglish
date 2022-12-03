@@ -1,0 +1,67 @@
+.guarantees {
+	padding: 25px 0 0;
+
+	&__title {
+		@include titleMixin($fw:800, $fz:26px, $lh:1.26);
+		text-align: center;
+		letter-spacing: 0.03em;
+		margin-bottom: 30px;
+	}
+	&__wrapper {
+		display: flex;
+		background: #F1F1F1;
+		margin: 0 -15px;
+		padding: 30px 0;
+	}
+	&__list {
+
+		padding-right: 20px;
+		padding-left: 20px;
+	}
+	&__item {
+		display: flex;
+		padding-left: 30px;
+		position: relative;
+	
+	}
+	&__item:not(:last-child) {
+		margin-bottom: 20px;
+		
+		
+	}
+	&__text {
+		@include titleMixin($fw:500, $fz:12px, $lh:1.66);
+		color: #3d3d3d;
+	}
+	&__text::before {
+		content: "";
+		display: block;
+		position: absolute;
+		top: -3px;
+		left: -5px;
+		height: 20px;
+		width: 14px;
+		background-image: url(../../img/fire.svg);
+		background-position: left, top;
+		background-repeat: no-repeat;
+		background-size: 14px 20px;
+	}
+	&__item:not(:last-child)::before{
+		content: "";
+		display: block;
+		position: absolute;
+		height: 80%;
+		top: 20px;
+		left: 0;
+	
+		border-left: 3px dotted var(--primery-text-color);
+	}
+	&__icon-wrapper {
+		margin-right: 20px;
+	}
+
+	&__accent {
+		color: var(--accent-color);
+	}
+}
+
